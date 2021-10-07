@@ -9,12 +9,22 @@
   padding-top: 6px;
 }
 .header__menu {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
+  padding: 60px 20px;
   width: 250px;
   height: 100vh;
   background-color: $menu-color;
+  &.is-open {
+    display: block;
+  }
+}
+.close-btn {
+  position: absolute;
+  top: 23px;
+  right: 28px;
 }
 .menu-btn {
   display: flex;
@@ -27,4 +37,5 @@
 .menu-btn__icon {
   width: 20px;
   height: 12px;
+  fill: $brand-color;
 }
