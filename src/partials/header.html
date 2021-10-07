@@ -7,24 +7,33 @@
       alt="logo"
     />
     <div class="header__menu js-menu-container" id="mobile-menu">
-      <button class="close-btn js-close-menu" type="button"></button>
-      <button type="button">Buy now</button>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Home</a>
+      <button class="close-btn js-close-menu" type="button">
+        <svg class="close-btn__icon">
+          <use href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <button class="buy-btn--menu btn--white" type="button">
+        Buy now
+        <svg class="buy-btn__icon--menu">
+          <use href="./images/sprite.svg#btn-arrow"></use>
+        </svg>
+      </button>
+      <nav class="header__nav">
+        <ul class="navigation">
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Home</a>
           </li>
-          <li>
-            <a href="">About us</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">About us</a>
           </li>
-          <li>
-            <a href="">How it’s made?</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">How it’s made?</a>
           </li>
-          <li>
-            <a href="">Our products</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Our products</a>
           </li>
-          <li>
-            <a href="">Contact</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Contact</a>
           </li>
         </ul>
       </nav>

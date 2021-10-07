@@ -13,7 +13,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  padding: 60px 20px;
+  padding: 60px 0;
   width: 250px;
   height: 100vh;
   background-color: $menu-color;
@@ -25,6 +25,63 @@
   position: absolute;
   top: 23px;
   right: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+.close-btn__icon {
+  width: 14px;
+  height: 14px;
+  fill: $main-white;
+}
+.buy-btn--menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  width: 209px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  border: 0;
+  border-radius: 22px;
+}
+.buy-btn__icon--menu {
+  margin-left: 28px;
+  width: 5.26px;
+  height: 8px;
+  fill: $brand-color;
+}
+
+.header__nav {
+  margin-top: 19px;
+}
+.navigation__item {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+
+  height: 42px;
+  border-top: 1px solid #e18298;
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
+}
+.navigation__link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $main-white;
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
 }
 .menu-btn {
   display: flex;
