@@ -1,0 +1,17 @@
+
+
+
+
+//DESKTOP||
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -24px;
+    margin-left: -24px;
+}
+
+.products__item {
+    flex-basis: calc((100% - 78px) / 3);
+    margin-left: 24px;
+    margin-right: 24px;
+}
