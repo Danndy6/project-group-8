@@ -4,6 +4,10 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './utils/variables';
+@import './utils/hidden';
+@import './utils/mixins';
+@import './utils/breakpoints';
 @import './base/globals';
 @import './base/resets';
 @import './layout/header';
