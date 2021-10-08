@@ -1,12 +1,18 @@
 .header {
   position: relative;
+  z-index: 99;
   background-color: transparent;
 }
 .header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-top: 6px;
+  @media screen and (max-width: $tablet - 1) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-top: 37px;
+  }
 }
 .header__menu {
   display: none;
@@ -57,7 +63,6 @@
   height: 8px;
   fill: $brand-color;
 }
-
 .header__nav {
   margin-top: 19px;
 }
@@ -90,9 +95,36 @@
   padding: 0;
   border: 0;
   background-color: transparent;
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+  }
 }
 .menu-btn__icon {
   width: 20px;
   height: 12px;
+  fill: $brand-color;
+}
+.buy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  padding: 0;
+
+  width: 160px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  border: 0;
+  border-radius: 22px;
+  @media screen and (max-width: $tablet - 1) {
+    display: none;
+  }
+}
+.buy-btn__icon {
+  margin-left: 12.08px;
+  width: 4.03px;
+  height: 8px;
   fill: $brand-color;
 }
