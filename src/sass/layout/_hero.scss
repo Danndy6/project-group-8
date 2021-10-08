@@ -1,0 +1,26 @@
+.hero__container {
+  padding-top: 193px;
+  padding-bottom: 160px;
+
+  background-color: $background-pink;
+}
+.hero__title {
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $main-white;
+}
+.hero__title--alt {
+  font-size: 48px;
+  line-height: 0.96;
+  letter-spacing: 0.04em;
+  color: $brand-color;
+}
+.hero-nav {
+  display: flex;
+  margin-top: 19px;
+}
+.hero-nav__item:not(:last-child) {
+  margin-right: 8px;
+}

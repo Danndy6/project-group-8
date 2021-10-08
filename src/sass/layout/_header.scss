@@ -1,5 +1,6 @@
 .header {
-  position: relative;
+  position: fixed;
+  width: 100vw;
   z-index: 99;
   background-color: transparent;
 }
@@ -13,18 +14,23 @@
   @media screen and (min-width: $tablet) {
     padding-top: 37px;
   }
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+  }
 }
 .header__menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 60px 0;
-  width: 250px;
-  height: 100vh;
-  background-color: $menu-color;
-  &.is-open {
-    display: block;
+  @media screen and (max-width: $desktop - 1) {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 60px 0;
+    width: 250px;
+    height: 100vh;
+    background-color: $menu-color;
+    &.is-open {
+      display: block;
+    }
   }
 }
 .close-btn {
@@ -48,6 +54,9 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 
   width: 209px;
   height: 44px;
@@ -64,17 +73,26 @@
   fill: $brand-color;
 }
 .header__nav {
-  margin-top: 19px;
+  @media screen and (max-width: $desktop - 1) {
+    margin-top: 19px;
+  }
+}
+.navigation {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 .navigation__item {
   display: flex;
   align-items: center;
   padding-left: 24px;
 
-  height: 42px;
-  border-top: 1px solid #e18298;
-  &:last-child {
-    border-bottom: 1px solid #e18298;
+  @media screen and (max-width: $desktop - 1) {
+    height: 42px;
+    border-top: 1px solid #e18298;
+    &:last-child {
+      border-bottom: 1px solid #e18298;
+    }
   }
 }
 .navigation__link {
@@ -83,6 +101,10 @@
   font-size: 14px;
   line-height: 1.29;
   color: $main-white;
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
   &:hover,
   &:focus {
     color: $brand-color;
@@ -97,6 +119,9 @@
   background-color: transparent;
   @media screen and (min-width: $tablet) {
     margin-left: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
   }
 }
 .menu-btn__icon {
