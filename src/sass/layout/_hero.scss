@@ -1,8 +1,14 @@
+.hero {
+  background-color: $background-pink;
+}
 .hero__container {
+  position: relative;
   padding-top: 193px;
   padding-bottom: 160px;
 
-  background-color: $background-pink;
+  background-image: url('../images/m-hero.png'), url('../images/m-circle-bg.png');
+  background-position: 117px 92px, 36px 83px;
+  background-repeat: no-repeat, no-repeat;
 }
 .hero__title {
   font-size: 26px;
