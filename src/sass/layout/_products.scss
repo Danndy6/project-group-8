@@ -1,5 +1,28 @@
+.products__title {
+    color:$main-white;
+}
 
+.products__text {
+    color:$main-white;
+}
 //MOBILE//
+.products__title {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 66px;
+}
+
+.products__text {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 152%;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
 .section-products {
     padding-top: 121px;
     padding-bottom: 98px;
@@ -8,6 +31,23 @@
 .products__item:not(:last-child) {
     margin-bottom: 17px;
 }
+
+.products__item--ice-cream {
+    position: relative;
+    &::before {
+        position:absolute;
+        content: "";
+        display: block;
+        bottom: 70%;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/d-product-1.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        
+    }
+}
+
 .products__thumb {
     padding-top: 161px;
     padding-bottom: 41px;
