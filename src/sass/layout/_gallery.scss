@@ -1,0 +1,30 @@
+.section__gallery {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  height: 122px;
+  background: $sd-background-white;
+  background-image: linear-gradient(
+    to bottom,
+    $sd-background-white 48px,
+    $main-white 74px,
+    $main-white 100%
+  );
+  background-image: url('..//images/m-gallery.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+      to bottom,
+      $sd-background-white 48px,
+      $main-white 74px,
+      $main-white 100%
+    );
+    background-image: url('..//images/m-gallery-2x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
