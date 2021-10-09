@@ -37,10 +37,11 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script>
+		$(document).ready(function () {
 				$('.slider').slick({
 					arrows: false,
 					dots: true,
-					adaptiveHeight: true,
+					adaptiveHeight: false,
 					slidesToShow: 1,
 					speed: 1000,
 					easing: 'linear',
@@ -65,8 +66,9 @@
 						}
 					],
 					mobileFirst: true,
-					appendDots: $('.pagination'),
+	
 				});  
+		}); 		
 	</script>
 	<script src="./js/mobile-menu.js"></script>
 	<script src="./index.js"></script>
