@@ -9,19 +9,21 @@
 }
 
 .slider__text {
+  width: 100%;
   position: relative;
-  @include font(500, 12px, 2.55);
+  font-weight: 500;
+  @include font(12px, 2.55);
   text-align: center;
   color: $main-black;
-  background-color: #fafafa;
-  padding-left: 57px;
-  padding-bottom: 26px;
-  padding-right: 66px;
   padding-top: 43px;
+  padding-right: 66px;
+  padding-bottom: 26px;
+  padding-left: 57px;
+  background-color: #fafafa;
   &::before {
     content: '';
     background-image: url(../images/quotes.png);
-    color: rgba(225, 225, 225, 1);
+
     position: absolute;
     width: 54px;
     height: 40px;
@@ -33,20 +35,20 @@
   }
 
   @media screen and (min-width: 768px) {
-    @include font(500, 14px, 2.14);
+    @include font(14px, 2.14);
     letter-spacing: 0.04em;
-    padding-left: 80px;
-    padding-bottom: 34px;
-    padding-right: 80px;
     padding-top: 47px;
+    padding-right: 80px;
+    padding-bottom: 34px;
+    padding-left: 80px;
   }
 
   @media screen and (min-width: 1280px) {
-    @include font(500, 16px, 1.875);
-    padding-left: 87px;
-    padding-bottom: 39px;
-    padding-right: 89px;
-    padding-top: 47px;
+    @include font(16px, 1.875);
+    padding-top: 64.5px;
+    padding-right: 47px;
+    padding-bottom: 0.5px;
+    padding-left: 57px;
   }
 }
 
@@ -159,4 +161,13 @@
 
 .slider__address {
   margin-top: 66px;
+  font-weight: 500;
+  color: $main-black;
+  @include font(14px, 1.86);
+  @media screen and (min-width: 768px) {
+    @include font(16px, 1.86);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(20px, 1.86);
+  }
 }
