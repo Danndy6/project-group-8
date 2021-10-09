@@ -1,5 +1,18 @@
 <section class="section__gallery">
-  <div class="container">
+  <div class="container gallery-container">
     <h2 class="visibility-hiden">Gallery</h2>
+    <img
+      alt="фото-Галерея"
+      src="./images/m-gallery.png"
+      srcset="
+        ./images/d-gallery.png    1280w,
+        ./images/t-gallery.png     768w,
+        ./images/m-gallery.png     320w,
+        ./images/d-gallery-2x.png 2560w,
+        ./images/t-gallery-2x.png 1536w,
+        ./images/m-gallery-2x.png  640w
+      "
+      sizes="(min-width: 1280px) 100w, (min-width: 768px) 100w, (max-width: 480px) 100w, 100vw"
+    />
   </div>
 </section>
