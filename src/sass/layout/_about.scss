@@ -1,0 +1,60 @@
+.about {
+	margin-top: 130px;
+	background-color: $sd-background-white;
+	@media screen and (max-width: $tablet), (min-width: $desktop) {
+		padding-top: 125px;
+	}
+}
+.about__container {
+	display: flex;
+	@media screen and (max-width: $tablet - 1px) {
+		flex-direction: column;
+		align-items: center;
+	}
+	@media screen and (min-width: $tablet) {
+		justify-content: space-between;
+	}
+}
+.about__img {
+	@media screen and (min-width: $tablet) {
+		max-width: 340px;
+	}
+}
+.about__content {
+	@include font(500);
+	width: 220px;
+	margin-top: 45px;
+	@media screen and (min-width: $tablet) {
+		@include font(500, 14px, 1.76);
+		width: 340px;
+	}
+	@media screen and (min-width: $desktop) {
+		width: 460px;
+	}
+}
+.about__main-text {
+	color: $main-black;
+	@media screen and (min-width: $desktop) {
+		@include font(500, 16px, 1.76);
+	}
+}
+.about__sd-text {
+	margin-top: 45px;
+	color: $primary-text-color;
+	@media screen and (min-width: $desktop) {
+		@include font(500, 14px, 1.94);
+		margin-top: 35px;
+	}
+}
+.about__btn {
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	margin-top: 15px;
+	@media screen and (min-width: $tablet) {
+		margin-top: 62px;
+	}
+	@media screen and (min-width: $desktop) {
+		margin-top: 45px;
+	}
+}
