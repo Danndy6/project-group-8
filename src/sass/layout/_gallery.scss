@@ -3,27 +3,21 @@
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
   padding: 0 0 0 0;
-  @media screen and (min-width: $mobile) {
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 80px;
-    padding: 0 0 0 0;
-  }
+
   @media screen and (min-width: $tablet) {
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 121px;
+    margin-bottom: 0px;
     padding: 0 0 0 0;
   }
   @media screen and (min-width: $desktop) {
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 123px;
+    margin-bottom: 0px;
     padding: 0 0 0 0;
   }
 }
