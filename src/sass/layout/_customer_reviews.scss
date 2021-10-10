@@ -1,30 +1,29 @@
 .slider {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .slider__item {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  counter-increment: slide;
   position: relative;
+  text-align: center;
 }
 
 .slider__text {
+  width: 100%;
   position: relative;
-  @include font(500, 12px, 2.55);
+  font-weight: 500;
+  @include font(12px, 2.55);
   text-align: center;
   color: $main-black;
-  background-color: #fafafa;
-  padding-left: 57px;
-  padding-bottom: 26px;
-  padding-right: 66px;
   padding-top: 43px;
+  padding-right: 66px;
+  padding-bottom: 26px;
+  padding-left: 57px;
+  background-color: #fafafa;
   &::before {
     content: '';
     background-image: url(../images/quotes.png);
-    color: rgba(225, 225, 225, 1);
+
     position: absolute;
     width: 54px;
     height: 40px;
@@ -36,27 +35,27 @@
   }
 
   @media screen and (min-width: 768px) {
-    @include font(500, 14px, 2.14);
+    @include font(14px, 2.14);
     letter-spacing: 0.04em;
-    padding-left: 80px;
-    padding-bottom: 34px;
-    padding-right: 80px;
     padding-top: 47px;
+    padding-right: 80px;
+    padding-bottom: 34px;
+    padding-left: 80px;
   }
 
   @media screen and (min-width: 1280px) {
-    @include font(500, 16px, 1.875);
-    padding-left: 87px;
-    padding-bottom: 39px;
-    padding-right: 89px;
-    padding-top: 47px;
+    @include font(16px, 1.875);
+    padding-top: 64.5px;
+    padding-right: 47px;
+    padding-bottom: 0.5px;
+    padding-left: 57px;
   }
 }
 
 .slider__text--gradient {
   background-repeat: repeat-x;
   background-position: 0 100%;
-  background-size: 100% 1px;
+  background-size: 5px 1px;
   background-image: linear-gradient(to right, #e1e1e1, #e1e1e1);
 }
 
@@ -66,4 +65,109 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 29px;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.slider__item {
+  text-align: center;
+  // opacity: 0.4;
+  // margin-left: auto;
+  // margin-right: auto;
+}
+
+.slider__item.slick-center {
+  opacity: 1;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 50px;
+  border: none;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  // background: url('/images/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 0;
+  // background: url('/images/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin-right: 18px;
+}
+/* Активная точка */
+.slider .slick-dots li.slick-active {
+}
+/* Элемент точки */
+//  {
+//   display: flex;
+//   justify-content: center;
+//   background-color: pink;
+// }
+
+.slider .slick-dots {
+  display: flex;
+  position: absolute;
+  top: 60%;
+}
+.slider .slick-dots li button {
+  font-size: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  margin-top: 100px;
+}
+
+.slider .slick-dots li.slick-active button {
+  background: url(../images/home.svg);
+  width: 13px;
+  height: 13px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slider .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+.slider__address {
+  margin-top: 66px;
+  font-weight: 500;
+  color: $main-black;
+  @include font(14px, 1.86);
+  @media screen and (min-width: 768px) {
+    @include font(16px, 1.86);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(20px, 1.86);
+  }
 }
