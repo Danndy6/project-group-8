@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/d-product-1.png":[["d-product-1.1ef58342.png","jW5F"],"jW5F"],"./../images/d-product-1-2x.png":[["d-product-1-2x.00aea0dc.png","CqUx"],"CqUx"],"./../images/d-product-2.png":[["d-product-2.7a736cc3.png","aB6t"],"aB6t"],"./../images/d-product-2-2x.png":[["d-product-2-2x.35b3a8f9.png","h11d"],"h11d"],"./../images/d-product-3.png":[["d-product-3.bb799680.png","goK2"],"goK2"],"./../images/d-product-3-2x.png":[["d-product-3-2x.55b6f53e.png","tIEP"],"tIEP"],"./../images/arrow.jpg":[["arrow.a35c2367.jpg","GBUs"],"GBUs"],"./../images/quotes.svg":[["quotes.d42deeb5.svg","E7dR"],"E7dR"],"./../images/home.svg":[["home.39aa8f0a.svg","VKcl"],"VKcl"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/project-group-8/src.f75acccd.js.map
+//# sourceMappingURL=/project-group-8/src.50dd3c67.js.map
