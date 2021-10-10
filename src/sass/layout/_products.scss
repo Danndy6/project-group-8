@@ -1,4 +1,4 @@
-//PRODUCT SECTION//
+//PRODUCTS COMMON//
 
 .section__label--products {
     text-align: center;
@@ -17,20 +17,62 @@
         content: '\2026';
         font-size: 45px;
         position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 60%;
-        left: 40%;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        top: 65%;
+        left: 38%;
     }
 }
 
-
 .products__text {
     color:$main-white;
+    font-family: 'DM Sans';
+    font-weight: bold;
 }
+
+.products__item--ice-cream {
+    &::before {
+        background-image: url("../images/d-product-1.png");
+    }
+    &::before {
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/d-product-1-2x.png);
+  }
+}
+}
+
+.products__item--ice-coffee {
+    &::before {
+        background-image: url("../images/d-product-2.png");
+    }
+    &::before {
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/d-product-2-2x.png);
+      }
+    }
+}
+
+.products__item--milkshakes {
+    &::before {
+        background-image: url("../images/d-product-3.png");
+    }
+    &::before {
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/d-product-3-2x.png);
+      }
+    }
+}
+
 //MOBILE//
 .products__title {
+    font-family: 'Titan One';
     font-size: 20px;
     font-weight: normal;
     line-height: 1.15;
@@ -41,7 +83,6 @@
 
 .products__text {
     font-size: 14px;
-    font-weight: bold;
     line-height: 152%;
     letter-spacing: 0.04em;
     text-align: center;
@@ -73,26 +114,19 @@
         background-repeat: no-repeat;
 }
 }
-
-.products__item:not(:last-child) {
-    margin-bottom: 17px;
-}
-
-.products__item--ice-cream {
-    &::before {
-        background-image: url("../images/d-product-1.png");
+@media screen and (max-width: $tablet - 1px) {
+    .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-}
 
-.products__item--ice-coffee {
-    &::before {
-        background-image: url("../images/d-product-2.png");
+    .products__item {
+        max-width: 280px;
     }
-}
 
-.products__item--milkshakes {
-    &::before {
-        background-image: url("../images/d-product-3.png");
+    .products__item:not(:last-child) {
+        margin-bottom: 17px;
     }
 }
 
@@ -117,6 +151,7 @@
     background-image: url('../images/arrow.jpg');
     background-position: center;
     border-color: transparent;
+    cursor: pointer;
 }
 
 .products__thumb--pink {
@@ -131,30 +166,108 @@
    background-color: $background-green;  
 }
 
+
 //TABLET//
-@media screen and (min-width:768px) {
+@media screen and (min-width:$tablet) {
 .section-products {
     padding-top: 122px;
     padding-bottom: 112px;
     }
+    .products {
+        display: flex;
+        // flex-wrap: wrap;
+        // margin-top: -20px;
+        // margin-left: -20px;
+    }
+    
+    .products__item:not(:last-child) {
+    //     flex-basis: calc((100% - 108px) / 3);
+    //     margin-top: 20px;
+    //     margin-left: 20px;
+        margin-right: 20px;
+    // } 
+    }
+
+.products__text {
+    font-family: 'DM Sans';
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-//DESTOP//
-@media screen and (min-width:1200px) {
+.products__thumb {
+    max-height: 485px;
+    padding-top: 152px;
+    padding-bottom: 40px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.products__item {
+    height: 587px;
+    // border: 2px dashed #2a2a2a;
+    &::before {
+        width: 100%;
+        height: 224px;
+        top: 0;
+    }
+}
+
+}
+
+//DESKTOP//
+@media screen and (min-width:$desktop) {
+    
     .section-products {
     padding-top: 127px;
     padding-bottom: 119px;
     }
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -24px;
-    margin-left: -24px;
-}
 
-.products__item {
-    flex-basis: calc((100% - 78px) / 3);
-    margin-left: 24px;
-    margin-right: 24px;
-} 
+    .products {
+        display: flex;
+    }
+
+    .products__item:not(:last-child) {
+        margin-right: 24px;
+    } 
+
+    .products__thumb {
+        max-height: 525px;
+        padding-top: 163px;
+        padding-bottom: 50px;
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+
+    .products__item {
+        height: 735px;
+        // border: 2px dashed #2a2a2a;
+        &::before {
+            width: 100%;
+            height: 335px;
+            top: 0;
+            }
+        }
+
+    .products__text {
+        font-family: 'DM Sans';
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 176%;
+        letter-spacing: 0.04em;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .products__title {
+        font-family: 'Titan One';
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 1.13;
+        letter-spacing: 0.04em;
+    }
+
 }
