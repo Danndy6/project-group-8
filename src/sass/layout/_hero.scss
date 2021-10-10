@@ -9,6 +9,10 @@
     padding-top: 102px;
     padding-bottom: 34px;
   }
+  @media screen and (min-width: $desktop) {
+    padding-top: 171px;
+    padding-bottom: 56px;
+  }
 
   background-image: url('../images/m-hero.png'), url('../images/m-circle-bg.png');
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -23,6 +27,15 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/t-hero-1-2x.png'), url('../images/t-circle-bg2x.png');
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: url('../images/d-hero-1.png'), url('../images/d-circle-bg.png');
+    background-position: 594px 108px, 475px 52px;
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/d-hero-1-2x.png'), url('../images/d-circle-bg2x.png');
     }
   }
 }
@@ -53,9 +66,15 @@
 .hero-nav {
   display: flex;
   margin-top: 20px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 25px;
+  }
 }
 .hero-nav__item:not(:last-child) {
   margin-right: 8px;
+  @media screen and (min-width: $desktop) {
+    margin-right: 15px;
+  }
 }
 .hero-slider {
   @media screen and (max-width: $tablet - 1) {
@@ -67,12 +86,23 @@
 
   width: 114px;
   height: 48px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 112px;
+    margin-left: 295px;
+
+    width: 200px;
+    height: 78px;
+  }
 }
 .hero-slider__text {
   font-family: DM Sans;
   font-size: 8px;
   line-height: 1.5;
   color: $main-white;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 .hero-slider__btn {
   display: flex;
@@ -85,8 +115,19 @@
   height: 18px;
   border: 0;
   border-radius: 50%;
+  @media screen and (min-width: $desktop) {
+    margin-top: 20px;
+
+    width: 26px;
+    height: 26px;
+  }
 }
 .hero-slider__icon {
   width: 6px;
   height: 6px;
+  fill: currentColor;
+  @media screen and (min-width: $desktop) {
+    width: 8px;
+    height: 8px;
+  }
 }
