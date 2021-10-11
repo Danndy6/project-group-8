@@ -8,9 +8,19 @@
 		$sd-background-white 170px,
 		$sd-background-white 100%
 	);
+	@media screen and(min-width:$desktop) {
+		background-image: url(../images/d-about-bg.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: url(../images/d-about-bg-2x.png);
+		}
+	}
 }
 .contacts__list {
 	display: flex;
+	justify-content: center;
 	@media screen and (max-width: $tablet - 1px) {
 		flex-direction: column;
 		align-items: center;
