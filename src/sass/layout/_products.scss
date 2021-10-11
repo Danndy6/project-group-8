@@ -114,8 +114,8 @@
 
     position: absolute;
     display: flex;
-    top: -25%;
-    left: 6px;
+    top: -21%;
+    left: 0px;
 
     display: block;
 
@@ -234,10 +234,9 @@
 .products__item.active {
   &::before {
     top: -19%;
-    left: 6px;
     
-    @media screen and (min-width:$desktop - 1px) {
-      top: -15%;
+    @media screen and (min-width:$tablet) and (max-width:$desktop - 1px) {
+      top: -14%;
     }
 
     @media screen and (min-width:$desktop) {
