@@ -13,16 +13,82 @@
         <button class="hero-nav__btn--him btn btn--white" type="button">How it’s made?</button>
       </li>
     </ul>
+    <picture class="hero__bg--circle">
+      <source
+        srcset="./images/d-circle-bg.png 1x, ./images/d-circle-bg2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/t-circle-bg.png 1x, ./images/t-circle-bg2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/m-circle-bg.png 1x, ./images/m-circle-bg2x.png 2x"
+        media="(min-width: 320px)"
+      />
+      <img loading="lazy" src="./images/m-circle-bg.png" alt="Circle" />
+    </picture>
+    <picture class="hero__bg--icecream">
+      <source
+        srcset="./images/d-hero-1.png 1x, ./images/d-hero-1-2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/t-hero-1.png 1x, ./images/t-hero-1-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/m-hero.png 1x, ./images/m-hero-2x.png 2x"
+        media="(min-width: 320px)"
+      />
+      <img loading="lazy" src="./images/m-hero.png" alt="Icecream" />
+    </picture>
+    <picture class="hero__bg--chica">
+      <source
+        srcset="./images/d-hero-3.png 1x, ./images/d-hero-3-2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/t-hero-3.png 1x, ./images/t-hero-3-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img loading="lazy" src="./images/t-hero-3.png" alt="Milk" />
+    </picture>
     <div class="hero-slider">
-      <p class="hero-slider__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
-      <button class="hero-slider__btn btn--white" type="button">
-        <svg class="hero-slider__icon">
-          <use href="./images/sprite.svg#product-arrow"></use>
-        </svg>
-      </button>
+      <div class="hero-slider__tumb">
+        <picture>
+          <source
+            srcset="./images/d-hero-2.png 1x, ./images/d-hero-2-2x.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="./images/t-hero-2.png 1x, ./images/t-hero-2-2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <img loading="lazy" src="./images/t-hero-2.png" alt="Milk" />
+        </picture>
+      </div>
+      <div class="hero-slider__wrapper">
+        <p class="hero-slider__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button class="hero-slider__btn btn--white" type="button">
+          <svg class="hero-slider__icon">
+            <use href="./images/sprite.svg#product-arrow"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+    <ul class="units-count">
+      <li class="units-count__item">
+        <p class="units-count__text">16</p>
+        <p class="units-count__text--label">cafes</p>
+      </li>
+      <li class="units-count__item">
+        <p class="units-count__text">23</p>
+        <p class="units-count__text--label">food trucks</p>
+      </li>
+    </ul>
   </div>
 </section>

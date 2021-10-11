@@ -1,13 +1,13 @@
 .btn {
   font-size: 8px;
   line-height: 1.25;
-  padding: 9px 14px;
+  padding: 7px 14px;
   border: 0;
   border-radius: 20px;
   @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.25;
-    padding: 15px 23px;
+    padding: 12px 23px;
   }
 }
 .btn--pink {

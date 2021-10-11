@@ -2,7 +2,6 @@
   background-color: $background-pink;
 }
 .header__container {
-  border: 0;
   display: flex;
   align-items: center;
   padding-top: 6px;
@@ -14,9 +13,12 @@
   }
   @media screen and (min-width: $desktop) {
     justify-content: space-between;
+    padding-left: 46px;
+    padding-right: 115px;
   }
 }
 .header__menu {
+  z-index: 9;
   @media screen and (max-width: $desktop - 1) {
     display: none;
     position: absolute;
@@ -29,6 +31,9 @@
     &.is-open {
       display: block;
     }
+  }
+  @media screen and (min-width: $desktop) {
+    position: relative;
   }
 }
 .close-btn {
@@ -69,8 +74,8 @@
 }
 .buy-btn__icon--menu {
   margin-left: 28px;
-  width: 5.26px;
-  height: 8px;
+  width: 8px;
+  height: 10px;
   fill: $brand-color;
 }
 .header__nav {
@@ -86,9 +91,13 @@
 .navigation__item {
   display: flex;
   align-items: center;
-  padding-left: 24px;
-
+  &:not(:first-child) {
+    @media screen and (min-width: $desktop) {
+      margin-left: 35px;
+    }
+  }
   @media screen and (max-width: $desktop - 1) {
+    padding-left: 24px;
     height: 42px;
     border-top: 1px solid #e18298;
     &:last-child {
@@ -112,6 +121,8 @@
   }
 }
 .menu-btn {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,8 +137,8 @@
   }
 }
 .menu-btn__icon {
-  width: 20px;
-  height: 12px;
+  width: 40px;
+  height: 24px;
   fill: $brand-color;
 }
 .buy-btn {
@@ -139,6 +150,7 @@
 
   width: 160px;
   height: 44px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
@@ -147,10 +159,14 @@
   @media screen and (max-width: $tablet - 1) {
     display: none;
   }
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
 }
 .buy-btn__icon {
-  margin-left: 12.08px;
-  width: 4.03px;
-  height: 8px;
+  margin-left: 12px;
+  width: 8px;
+  height: 16px;
   fill: $brand-color;
 }
