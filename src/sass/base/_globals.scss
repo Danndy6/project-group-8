@@ -12,22 +12,14 @@
 		padding-right: 34px;
 	}
 	@media screen and (min-width: $desktop) {
-<<<<<<< Updated upstream
-		width: 1080px;
-=======
 		width: $desktop;
->>>>>>> Stashed changes
 		padding-left: 15px;
 		padding-right: 15px;
 	}
 }
 .title {
-<<<<<<< Updated upstream
-	font-family: "Titan One";
-=======
 	font-family: "Titan One", cursive;
 	text-align: center;
->>>>>>> Stashed changes
 	text-transform: uppercase;
 	margin-top: 15px;
 	@include font(400, 34px, 1.15);
@@ -40,12 +32,8 @@
 	}
 }
 .label {
-<<<<<<< Updated upstream
-	font-family: "Titan One";
-=======
 	font-family: "Titan One", cursive;
 	text-align: center;
->>>>>>> Stashed changes
 	text-transform: uppercase;
 	@include font(400, 18px, 1.17);
 	color: $sd-brand-color;
