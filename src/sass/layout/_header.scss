@@ -1,174 +1,174 @@
 .header {
-	background-color: $background-pink;
+  background-color: $background-pink;
 }
 .header__container {
-	display: flex;
-	align-items: center;
-	padding-top: 6px;
-	@media screen and (max-width: $tablet - 1) {
-		justify-content: space-between;
-	}
-	@media screen and (min-width: $tablet) {
-		padding-top: 37px;
-	}
-	@media screen and (min-width: $desktop) {
-		justify-content: space-between;
-		padding-left: 46px;
-		padding-right: 115px;
-	}
+  display: flex;
+  align-items: center;
+  padding-top: 6px;
+  @media screen and (max-width: $tablet - 1) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-top: 37px;
+  }
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+    padding-left: 46px;
+    padding-right: 115px;
+  }
 }
 .header__menu {
-	z-index: 9;
-	@media screen and (max-width: $desktop - 1) {
-		display: none;
-		position: absolute;
-		top: 0;
-		right: 0;
-		padding: 60px 0;
-		width: 250px;
-		height: 100vh;
-		background-color: $menu-color;
-		&.is-open {
-			display: block;
-		}
-	}
-	@media screen and (min-width: $desktop) {
-		position: relative;
-	}
+  z-index: 9;
+  @media screen and (max-width: $desktop - 1) {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 60px 0;
+    width: 250px;
+    height: 100vh;
+    background-color: $menu-color;
+    &.is-open {
+      display: block;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    position: relative;
+  }
 }
 .close-btn {
-	position: absolute;
-	top: 23px;
-	right: 28px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0;
-	border: 0;
-	background-color: transparent;
-	@media screen and (min-width: $desktop) {
-		display: none;
-	}
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 .close-btn__icon {
-	width: 14px;
-	height: 14px;
-	fill: $main-white;
+  width: 14px;
+  height: 14px;
+  fill: $main-white;
 }
 .buy-btn--menu {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto;
-	@media screen and (min-width: $desktop) {
-		display: none;
-	}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 
-	width: 209px;
-	height: 44px;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.29;
-	border: 0;
-	border-radius: 22px;
+  width: 209px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  border: 0;
+  border-radius: 22px;
 }
 .buy-btn__icon--menu {
-	margin-left: 28px;
-	width: 8px;
-	height: 10px;
-	fill: $brand-color;
+  margin-left: 28px;
+  width: 8px;
+  height: 10px;
+  fill: $brand-color;
 }
 .header__nav {
-	@media screen and (max-width: $desktop - 1) {
-		margin-top: 19px;
-	}
+  @media screen and (max-width: $desktop - 1) {
+    margin-top: 19px;
+  }
 }
 .navigation {
-	@media screen and (min-width: $desktop) {
-		display: flex;
-	}
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 .navigation__item {
-	display: flex;
-	align-items: center;
-	&:not(:first-child) {
-		@media screen and (min-width: $desktop) {
-			margin-left: 35px;
-		}
-	}
-	@media screen and (max-width: $desktop - 1) {
-		padding-left: 24px;
-		height: 42px;
-		border-top: 1px solid #e18298;
-		&:last-child {
-			border-bottom: 1px solid #e18298;
-		}
-	}
+  display: flex;
+  align-items: center;
+  &:not(:first-child) {
+    @media screen and (min-width: $desktop) {
+      margin-left: 35px;
+    }
+  }
+  @media screen and (max-width: $desktop - 1) {
+    padding-left: 24px;
+    height: 42px;
+    border-top: 1px solid #e18298;
+    &:last-child {
+      border-bottom: 1px solid #e18298;
+    }
+  }
 }
 .navigation__link {
-	text-decoration: none;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.29;
-	color: $main-white;
-	scroll-behavior: smooth;
-	transition: color $transition;
-	@media screen and (min-width: $desktop) {
-		font-size: 16px;
-		line-height: 1.31;
-	}
-	&:hover,
-	&:focus {
-		color: $brand-color;
-	}
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $main-white;
+  scroll-behavior: smooth;
+  transition: color $transition;
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
 }
 .menu-btn {
-	position: relative;
-	z-index: 2;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0;
-	border: 0;
-	background-color: transparent;
-	@media screen and (min-width: $tablet) {
-		margin-left: auto;
-	}
-	@media screen and (min-width: $desktop) {
-		display: none;
-	}
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 .menu-btn__icon {
-	width: 40px;
-	height: 24px;
-	fill: $brand-color;
+  width: 40px;
+  height: 24px;
+  fill: $brand-color;
 }
 .buy-btn {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-left: 30px;
-	padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  padding: 0;
 
-	width: 160px;
-	height: 44px;
+  width: 160px;
+  height: 44px;
 
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.29;
-	border: 0;
-	border-radius: 22px;
-	@media screen and (max-width: $tablet - 1) {
-		display: none;
-	}
-	@media screen and (min-width: $tablet) {
-		font-size: 16px;
-		line-height: 1.31;
-	}
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  border: 0;
+  border-radius: 22px;
+  @media screen and (max-width: $tablet - 1) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
 }
 .buy-btn__icon {
-	margin-left: 12px;
-	width: 8px;
-	height: 16px;
-	fill: $brand-color;
+  margin-left: 12px;
+  width: 8px;
+  height: 16px;
+  fill: $brand-color;
 }
