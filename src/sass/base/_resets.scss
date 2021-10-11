@@ -5,23 +5,24 @@ h4,
 h5,
 h6,
 p {
-	margin: 0;
+  margin: 0;
 }
 ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 a,
 a:visited {
-	text-decoration: none;
+  text-decoration: none;
 }
 img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 body {
-	font-family: "DM Sans", sans-serif;
-	color: $primary-text-color;
+  font-family: 'DM Sans', sans-serif;
+  color: $primary-text-color;
+  background-color: $background-pink;
 }
