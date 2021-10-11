@@ -1,15 +1,21 @@
-.slider {
-  position: relative;
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 86px;
+  @media screen and (min-width: 768px) {
+    padding-top: 121px;
+    padding-bottom: 119px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 123px;
+    padding-bottom: 132px;
+  }
 }
 
 .slider__thumb {
+  position: relative;
   width: 280px;
   height: 308px;
   background-color: #fafafa;
-  padding-top: 43px;
-  padding-right: 66px;
-  padding-bottom: 26px;
-  padding-left: 57px;
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
@@ -17,7 +23,7 @@
     height: 164px;
     padding-top: 47px;
     padding-right: 80px;
-    padding-bottom: 34px;
+    padding-bottom: 28px;
     padding-left: 80px;
   }
 
@@ -31,34 +37,16 @@
   }
 }
 
-.slider__item {
-  text-align: center;
-}
-
 .slider__text {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
   font-weight: 500;
   @include font(500, 12px, 2.55);
   text-align: center;
   color: $main-black;
-  background-image: repeating-linear-gradient(
-    to bottom,
-    transparent,
-    transparent 14px,
-    #e1e1e1 15px
-  );
-  background-repeat: repeat-x;
-
-  @media screen and (min-width: 768px) {
-    @include font(500, 14px, 2.14);
-    letter-spacing: 0.04em;
-  }
-
-  @media screen and (min-width: 1280px) {
-    @include font(500, 16px, 1.875);
-  }
-
   &::before {
     z-index: -1;
     content: '';
@@ -68,10 +56,41 @@
     width: 54px;
     height: 40px;
     top: -20px;
-    left: -30px;
     display: block;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    transform: translate(-50%, -50%);
+    @include font(500, 14px, 2.14);
+    letter-spacing: 0.04em;
+    &::before {
+      left: -10px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(500, 16px, 1.875);
+    &::before {
+      left: 10px;
+    }
+  }
+}
+
+.slider__text--gradient {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 28px,
+    #e1e1e1 30px
+  );
+  padding-left: 7px;
+  padding-right: 3px;
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 12px;
   }
 }
 
