@@ -1,28 +1,32 @@
 .btn {
-  font-size: 8px;
-  line-height: 1.25;
-  padding: 7px 14px;
-  border: 0;
-  border-radius: 20px;
-  @media screen and (min-width: $desktop) {
-    font-size: 14px;
-    line-height: 1.25;
-    padding: 12px 23px;
-  }
+	font-size: 8px;
+	line-height: 1.25;
+	padding: 7px 14px;
+	border: 0;
+	border-radius: 20px;
+	@media screen and (min-width: $desktop) {
+		font-size: 14px;
+		line-height: 1.25;
+		padding: 12px 23px;
+	}
 }
 .btn--pink {
-  color: $main-white;
-  background-color: $brand-color;
-  &:hover,
-  &:focus {
-    background-color: $pink-hover;
-  }
+	cursor: pointer;
+	color: $main-white;
+	background-color: $brand-color;
+	transition: background-color $transition;
+	&:hover,
+	&:focus {
+		background-color: $pink-hover;
+	}
 }
 .btn--white {
-  color: $brand-color;
-  background-color: $main-white;
-  &:hover,
-  &:focus {
-    background-color: $white-hover;
-  }
+	cursor: pointer;
+	color: $brand-color;
+	background-color: $main-white;
+	transition: background-color $transition;
+	&:hover,
+	&:focus {
+		background-color: $white-hover;
+	}
 }
