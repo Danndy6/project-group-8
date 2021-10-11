@@ -85,19 +85,20 @@
 			</li>
 		</ul>
 		<div class="btns-box">
-			<button class="btn--contacts btn--pink" type="button">Our Locations<svg class="btn__arrow" width="8" height="16">
+			<button class="btn--contacts btn--pink" type="button" locations-modal-open>Our Locations<svg class="btn__arrow"
+					width="8" height="16">
 					<use href="./images/sprite.svg#btn-arrow"></use>
 				</svg></button>
-			<button class="btn--contacts btn--white" type="button" data-modal-open>Franchise<svg class="btn__arrow" width="8"
-					height="16">
+			<button class="btn--contacts btn--white" type="button" franchise-modal-open>Franchise<svg class="btn__arrow"
+					width="8" height="16">
 					<use href="./images/sprite.svg#btn-arrow"></use>
 				</svg></button>
 		</div>
 	</div>
 
-	<div class="backdrop is-hidden" data-modal>
+	<div class="backdrop is-hidden" franchise-modal>
 		<div class="modal">
-			<button type="button" class="modal__close-btn" data-modal-close>
+			<button type="button" class="modal__close-btn" franchise-modal-close>
 				<svg width="18" height="18">
 					<use href="./images/sprite.svg#close"></use>
 				</svg>
@@ -106,28 +107,28 @@
 			<form action="#" class="form" autocomplete="on" method="GET">
 				<label class="form__field">Name
 					<input class="form__input" type="text" name="name" required placeholder="Alex">
-					<!-- <svg class="form__svg" width="18" height="18">
-						<use href="./img/sprite.svg#form-person"></use>
-					</svg> -->
+					<svg class="form__svg" width="18" height="18">
+						<use href="./images/sprite.svg#form-person"></use>
+					</svg>
 				</label>
 				<label class="form__field">Phone
 					<input class="form__input" type="tel" name="tel" required minlength="10" placeholder="099-111-11-11"
 						title="099-111-11-11">
-					<!-- <svg class="form__svg" width="18" height="18">
-						<use href="./img/sprite.svg#form-phone"></use>
-					</svg> -->
+					<svg class="form__svg" width="18" height="18">
+						<use href="./images/sprite.svg#form-phone"></use>
+					</svg>
 				</label>
 				<label class="form__field">City
 					<input class="form__input" type="text" name="city" required placeholder="Chicago">
-					<!-- <svg class="form__svg" width="18" height="18">
-						<use href="./img/sprite.svg#form-person"></use>
-					</svg> -->
+					<svg class="form__svg" width="18" height="18">
+						<use href="./images/sprite.svg#form-location"></use>
+					</svg>
 				</label>
 				<label class="form__field">E-mail
 					<input class="form__input" type="email" name="mail" placeholder="client@gmai.com">
-					<!-- <svg class="form__svg" width="18" height="18">
-						<use href="./img/sprite.svg#form-mail"></use>
-					</svg> -->
+					<svg class="form__svg" width="18" height="18">
+						<use href="./images/sprite.svg#form-mail"></use>
+					</svg>
 				</label>
 				<label class="form__field">Comment
 					<textarea class="form__input form__input--comment" name="comment" rows="8" placeholder="Your text"></textarea>
@@ -139,6 +140,20 @@
 				</label>
 				<button class="form__submit-btn btn btn--white" type="submit">Send</button>
 			</form>
+		</div>
+	</div>
+
+	<div class="backdrop is-hidden" locations-modal>
+		<div class="modal">
+			<button type="button" class="modal__close-btn" locations-modal-close>
+				<svg width="18" height="18">
+					<use href="./images/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<h2 class="modal__title">Location</h2>
+			<iframe class="map"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8401.600054454373!2d-87.64431000930223!3d41.8839487858457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d13822d8aeb%3A0x73dc5d9b93ca70d1!2sFulton%20Market%20Kitchen!5e0!3m2!1sru!2sua!4v1633957834703!5m2!1sru!2sua"
+				style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		</div>
 	</div>
 </section>
