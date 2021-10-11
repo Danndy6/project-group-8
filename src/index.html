@@ -14,7 +14,8 @@
 		integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
 		crossorigin="anonymous" />
 	<!-- Add the slick-theme.css if you want default styling -->
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />		<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<!-- Add the slick-theme.css if you want default styling -->
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
 
@@ -38,39 +39,40 @@
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script>
 		$(document).ready(function () {
-				$('.slider').slick({
-					arrows: false,
-					dots: true,
-					adaptiveHeight: false,
-					slidesToShow: 1,
-					speed: 1000,
-					easing: 'linear',
-					infinite: false,
-					autoplay: true,
-					autoplaySpeed: 3000,
-					pauseOnFocus: true,
-					pauseOnHover: true,
-					pauseOnDotsHover: true,
-					druggable: true,
-					swipe: true,
-					waitForAnimate: false,
-					centerMode: false,
-					vertical: false,
-					responsive: [
-						{
-							breakpoint: 768,
-							settings: {
-								vertical: false,
-								arrows: true,
-							}
+			$('.slider').slick({
+				arrows: false,
+				dots: true,
+				adaptiveHeight: false,
+				slidesToShow: 1,
+				speed: 1000,
+				easing: 'linear',
+				infinite: false,
+				autoplay: true,
+				autoplaySpeed: 3000,
+				pauseOnFocus: true,
+				pauseOnHover: true,
+				pauseOnDotsHover: true,
+				druggable: true,
+				swipe: true,
+				waitForAnimate: false,
+				centerMode: false,
+				vertical: false,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							vertical: false,
+							arrows: true,
 						}
-					],
-					mobileFirst: true,
-	
-				});  
-		}); 		
+					}
+				],
+				mobileFirst: true,
+			});
+		});
 	</script>
 	<script src="./js/mobile-menu.js"></script>
+	<script src="./js/scroll.js"></script>
+	<script src="./js/modal.js"></script>
 	<script src="./index.js"></script>
 </body>
 

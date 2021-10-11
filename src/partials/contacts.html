@@ -1,4 +1,4 @@
-<section class="contacts">
+<section class="contacts" id="contacts">
 	<div class="container">
 		<h2 class="visibility-hiden">Contacts</h2>
 		<ul class="contacts__list">
@@ -88,9 +88,57 @@
 			<button class="btn--contacts btn--pink" type="button">Our Locations<svg class="btn__arrow" width="8" height="16">
 					<use href="./images/sprite.svg#btn-arrow"></use>
 				</svg></button>
-			<button class="btn--contacts btn--white" type="button">Franchise<svg class="btn__arrow" width="8" height="16">
+			<button class="btn--contacts btn--white" type="button" data-modal-open>Franchise<svg class="btn__arrow" width="8"
+					height="16">
 					<use href="./images/sprite.svg#btn-arrow"></use>
 				</svg></button>
+		</div>
+	</div>
+
+	<div class="backdrop is-hidden" data-modal>
+		<div class="modal">
+			<button type="button" class="modal__close-btn" data-modal-close>
+				<svg width="18" height="18">
+					<use href="./images/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<h2 class="modal__title">Leave your details, we will call you back</h2>
+			<form action="#" class="form" autocomplete="on" method="GET">
+				<label class="form__field">Name
+					<input class="form__input" type="text" name="name" required placeholder="Alex">
+					<!-- <svg class="form__svg" width="18" height="18">
+						<use href="./img/sprite.svg#form-person"></use>
+					</svg> -->
+				</label>
+				<label class="form__field">Phone
+					<input class="form__input" type="tel" name="tel" required minlength="10" placeholder="099-111-11-11"
+						title="099-111-11-11">
+					<!-- <svg class="form__svg" width="18" height="18">
+						<use href="./img/sprite.svg#form-phone"></use>
+					</svg> -->
+				</label>
+				<label class="form__field">City
+					<input class="form__input" type="text" name="city" required placeholder="Chicago">
+					<!-- <svg class="form__svg" width="18" height="18">
+						<use href="./img/sprite.svg#form-person"></use>
+					</svg> -->
+				</label>
+				<label class="form__field">E-mail
+					<input class="form__input" type="email" name="mail" placeholder="client@gmai.com">
+					<!-- <svg class="form__svg" width="18" height="18">
+						<use href="./img/sprite.svg#form-mail"></use>
+					</svg> -->
+				</label>
+				<label class="form__field">Comment
+					<textarea class="form__input form__input--comment" name="comment" rows="8" placeholder="Your text"></textarea>
+				</label>
+				<label class="policy">
+					<input class="policy__checkbox" type="checkbox">
+					<span class="policy__icon"></span>
+					I agree to the newsletter and accept <a href="#" class="policy__link">Terms of an agreement</a>
+				</label>
+				<button class="form__submit-btn btn btn--white" type="submit">Send</button>
+			</form>
 		</div>
 	</div>
 </section>

@@ -1,0 +1,54 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	opacity: 1;
+	transition: opacity $transition;
+	background: rgba(255, 184, 202, 0.4);
+	&.is-hidden {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	background: $sd-brand-color;
+	@media screen and (min-width: 320px) {
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 100%;
+	}
+	@media screen and (min-width: $mobile) {
+		width: 450px;
+		padding: 40px;
+	}
+	@media screen and (min-width: $desktop) {
+		width: 528px;
+	}
+}
+.modal__close-btn {
+	position: fixed;
+	top: 8px;
+	right: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border: 0;
+	background-color: transparent;
+}
+.modal__title {
+	font-family: "Titan One", cursive;
+	font-size: 20px;
+	line-height: 23px;
+	color: $brand-color;
+}
