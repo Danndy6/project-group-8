@@ -28,6 +28,7 @@
 		width: 250px;
 		height: 100vh;
 		background-color: $menu-color;
+		transition: transform $transition;
 		&.is-open {
 			display: block;
 		}
@@ -66,9 +67,7 @@
 
 	width: 209px;
 	height: 44px;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.29;
+	@include font(700, 14px, 1.29);
 	border: 0;
 	border-radius: 22px;
 }
@@ -107,11 +106,8 @@
 }
 .navigation__link {
 	text-decoration: none;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.29;
+	@include font(700, 14px, 1.29);
 	color: $main-white;
-	scroll-behavior: smooth;
 	transition: color $transition;
 	@media screen and (min-width: $desktop) {
 		font-size: 16px;
@@ -153,17 +149,14 @@
 	width: 160px;
 	height: 44px;
 
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.29;
+	@include font(700, 14px, 1.29);
 	border: 0;
 	border-radius: 22px;
 	@media screen and (max-width: $tablet - 1) {
 		display: none;
 	}
 	@media screen and (min-width: $tablet) {
-		font-size: 16px;
-		line-height: 1.31;
+		@include font(700, 16px, 1.31);
 	}
 }
 .buy-btn__icon {

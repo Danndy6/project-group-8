@@ -13,38 +13,36 @@
 }
 
 .slider__thumb {
-  position: relative;
   width: 280px;
   height: 308px;
   background-color: #fafafa;
-  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-top: 43px;
 
   @media screen and (min-width: 768px) {
     width: 620px;
     height: 164px;
-    padding-top: 47px;
-    padding-right: 80px;
+    padding-top: 30px;
+    padding-right: 36px;
     padding-bottom: 28px;
-    padding-left: 80px;
+    padding-left: 40px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 926px;
     height: 138px;
-    padding-top: 47px;
-    padding-right: 89px;
-    padding-bottom: 39px;
-    padding-left: 89px;
+    padding-top: 32px;
+    padding-right: 54px;
+    padding-bottom: 32px;
+    padding-left: 50px;
   }
 }
 
 .slider__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   z-index: 1;
-  font-weight: 500;
   @include font(500, 12px, 2.55);
   text-align: center;
   color: $main-black;
@@ -63,8 +61,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    position: relative;
-    transform: translate(-50%, -50%);
     @include font(500, 14px, 2.14);
     letter-spacing: 0.04em;
     &::before {
@@ -75,7 +71,7 @@
   @media screen and (min-width: 1280px) {
     @include font(500, 16px, 1.875);
     &::before {
-      left: 10px;
+      left: -5px;
     }
   }
 }
@@ -88,10 +84,17 @@
     #e1e1e1 30px
   );
   padding-left: 7px;
-  padding-right: 3px;
+  padding-right: 16px;
+  padding-bottom: 6px;
   @media screen and (min-width: 768px) {
     padding-left: 20px;
-    padding-right: 12px;
+    padding-right: 44px;
+    padding-bottom: 6px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 28px;
+    padding-right: 35px;
+    padding-bottom: 7px;
   }
 }
 
@@ -111,7 +114,6 @@
 
 .slider__address {
   margin-top: 52px;
-  font-weight: 500;
   color: $main-black;
   @include font(500, 14px, 1.86);
   @media screen and (min-width: 768px) {
