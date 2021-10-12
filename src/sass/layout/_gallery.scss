@@ -1,12 +1,6 @@
 .gallery {
 	background-image: linear-gradient(to bottom, $sd-background-white 40%, $main-white 40%, $main-white 100%);
 }
-.gallery__img {
-	width: 365px;
-	@media screen and (min-width: $tablet) {
-		width: 786px;
-	}
-	@media screen and (min-width: $desktop) {
-		width: $desktop;
-	}
+.container--gallery {
+	padding: 0;
 }
