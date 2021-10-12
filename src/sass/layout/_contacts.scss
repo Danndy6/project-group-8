@@ -103,6 +103,9 @@
 	@include font(500, 12px, 1.5);
 	color: $primary-text-color;
 	@media screen and (min-width: $tablet) {
+		font-size: 14px;
+	}
+	@media screen and (min-width: $desktop) {
 		font-size: 16px;
 	}
 }
