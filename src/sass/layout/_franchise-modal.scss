@@ -39,7 +39,8 @@
 	}
 }
 .policy {
-	display: block;
+	display: flex;
+	align-items: center;
 	margin-top: 20px;
 	font-size: 12px;
 	@media screen and(min-width: $desktop) {
@@ -77,6 +78,7 @@
 	}
 }
 .policy__link {
+	margin-left: 5px;
 	color: $brand-color;
 	text-decoration: underline;
 	transition: color $transition;
