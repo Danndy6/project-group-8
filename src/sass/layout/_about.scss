@@ -71,8 +71,12 @@
 .about__btn {
 	display: flex;
 	align-items: center;
-	font-weight: 700;
+	justify-content: center;
+	@include font(700, 16px, 1.25);
+	padding: 15px 23px;
 	margin-top: 15px;
+	border-radius: 25px;
+	border: 0;
 	@media screen and (min-width: $tablet) {
 		margin-top: 60px;
 	}

@@ -1,168 +1,148 @@
 .footer {
-  background-color: $sd-background-white;
-  padding-top: 113px;
-  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
-    padding-top: 165px;
-  }
+	background-color: $sd-background-white;
+	padding-top: 113px;
+	@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+		padding-top: 165px;
+	}
 }
-
 .footer-container {
-  justify-content: space-around;
-  align-items: baseline;
-  padding-left: 20px;
-  padding-right: 20px;
-  @media screen and (min-width: $tablet) {
-    display: flex;
-  }
+	justify-content: space-around;
+	align-items: baseline;
+	padding-left: 20px;
+	padding-right: 20px;
+	@media screen and (min-width: $tablet) {
+		display: flex;
+	}
 }
 .footer-text {
-  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
-    max-width: 340px;
-  }
+	@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+		max-width: 340px;
+	}
 }
-
 .footer-text__homemade {
-  margin-bottom: 20px;
-  letter-spacing: 0.04em;
-  font-family: 'Titan One', cursive;
-  font-style: normal;
-  @include font(400, 18px, 1.16);
-
-  text-transform: uppercase;
-  color: $sd-brand-color;
-  margin-bottom: 20px;
-
-  @media screen and (max-width: $tablet - 1px) {
-    max-width: 230px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    font-size: 26px;
-    line-height: 1.15;
-  }
-  @media screen and (min-width: $desktop) {
-    font-size: 30px;
-    line-height: 34px;
-  }
+	margin-bottom: 20px;
+	letter-spacing: 0.04em;
+	font-family: "Titan One", cursive;
+	font-style: normal;
+	@include font(400, 18px, 1.16);
+	text-transform: uppercase;
+	color: $sd-brand-color;
+	margin-bottom: 20px;
+	@media screen and (max-width: $tablet - 1px) {
+		max-width: 230px;
+	}
+	@media screen and (min-width: $tablet) {
+		font-size: 26px;
+		line-height: 1.15;
+	}
+	@media screen and (min-width: $desktop) {
+		font-size: 30px;
+		line-height: 34px;
+	}
 }
-
 .footer-text__passion {
-  font-family: 'Titan One', cursive;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 1.11;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $brand-color;
-  @media screen and (max-width: $tablet - 1px) {
-    max-width: 200px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    font-size: 48px;
-    line-height: 1.14;
-    letter-spacing: 0.06em;
-    margin-bottom: 91px;
-  }
-  @media screen and (min-width: $desktop) {
-    font-size: 58px;
-    line-height: 1.13;
-    letter-spacing: 0.06em;
-    margin-bottom: 97px;
-  }
+	font-family: "Titan One", cursive;
+	font-style: normal;
+	@include font(400, 34px, 1.11);
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: $brand-color;
+	@media screen and (max-width: $tablet - 1px) {
+		max-width: 200px;
+	}
+	@media screen and (min-width: $tablet) {
+		font-size: 48px;
+		line-height: 1.14;
+		letter-spacing: 0.06em;
+		margin-bottom: 91px;
+	}
+	@media screen and (min-width: $desktop) {
+		font-size: 58px;
+		line-height: 1.13;
+		letter-spacing: 0.06em;
+		margin-bottom: 97px;
+	}
 }
-
 .footer-join {
-  display: flex;
-  margin-left: auto;
-  justify-content: flex-end;
-  @media screen and (max-width: $tablet - 1px) {
-    margin-top: 43px;
-  }
+	display: flex;
+	margin-left: auto;
+	justify-content: flex-end;
+	@media screen and (max-width: $tablet - 1px) {
+		margin-top: 43px;
+	}
 }
 .footer-join__item:not(:last-child) {
-  margin-right: 28px;
-
-  @media screen and (min-width: $tablet) {
-    margin-right: 30px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-right: 24px;
-  }
+	margin-right: 28px;
+	@media screen and (min-width: $tablet) {
+		margin-right: 30px;
+	}
+	@media screen and (min-width: $desktop) {
+		margin-right: 24px;
+	}
 }
-
 .footer-join__link {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: 32px;
-  height: 32px;
-  background-color: $sd-brand-color;
-  border-radius: 50%;
-  transition: background-color 250ms linear;
-  &:hover {
-    background-color: $brand-color;
-  }
-  @media screen and (min-width: $tablet) {
-    width: 34px;
-    height: 34px;
-  }
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	width: 32px;
+	height: 32px;
+	background-color: $sd-brand-color;
+	border-radius: 50%;
+	transition: background-color $transition;
+	&:hover,
+	&:focus {
+		background-color: $brand-color;
+	}
+	@media screen and (min-width: $tablet) {
+		width: 34px;
+		height: 34px;
+	}
 }
-
 .footer-items__contact {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 1.86;
-  text-align: right;
-  color: $main-black;
-  margin-top: 46px;
-  @media screen and (max-width: $tablet - 1px) {
-    margin-bottom: 46px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-top: 50px;
-    font-size: 16px;
-    letter-spacing: 0.02em;
-  }
-  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
-    font-size: 14px;
-  }
+	font-family: "DM Sans", sans-serif;
+	font-style: normal;
+	@include font(700, 12px, 1.86);
+	text-align: right;
+	color: $main-black;
+	margin-top: 46px;
+	@media screen and (max-width: $tablet - 1px) {
+		margin-bottom: 46px;
+	}
+	@media screen and (min-width: $desktop) {
+		margin-top: 50px;
+		font-size: 16px;
+		letter-spacing: 0.02em;
+	}
+	@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+		font-size: 14px;
+	}
 }
-
 .footer-items__phone {
-  color: $brand-color;
+	color: $brand-color;
 }
-
 .footer-copyright {
-  text-align: center;
-  font-family: 'DM Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.52;
-  color: #907e82;
+	text-align: center;
+	font-family: "DM Sans", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.52;
+	color: #907e82;
 }
-
 .footer-bottom {
-  height: 94px;
-  border-top: 1px solid #e1e1e1;
-
-  padding-top: 22px;
-  padding-bottom: 25px;
-  padding-bottom: 22px;
-  @media screen and (min-width: $tablet) {
-    height: 73px;
-    padding-top: 29px;
-    padding-bottom: 18px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    height: 45px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+	height: 94px;
+	border-top: 1px solid #e1e1e1;
+	padding-top: 22px;
+	padding-bottom: 25px;
+	padding-bottom: 22px;
+	@media screen and (min-width: $tablet) {
+		height: 73px;
+		padding-top: 29px;
+		padding-bottom: 18px;
+	}
+	@media screen and (min-width: $desktop) {
+		height: 45px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 }
