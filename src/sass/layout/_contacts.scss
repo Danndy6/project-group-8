@@ -67,8 +67,7 @@
 	background-color: $background-green;
 }
 .card__box {
-	font-weight: 500;
-	padding-top: 25px;
+	@include font(500, 25px);
 	padding-bottom: 25px;
 	&:not(:first-child) {
 		border-top: 1px solid #e1e1e1;
@@ -97,9 +96,7 @@
 }
 .card__link {
 	font-family: "DM Sans", sans-serif;
-	font-weight: 500;
-	font-size: 12px;
-	line-height: 1.5;
+	@include font(500, 12px, 1.5);
 	color: $primary-text-color;
 	@media screen and (min-width: $tablet) {
 		font-size: 16px;
@@ -120,8 +117,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 16px;
-	line-height: 1.25;
+	@include font(400, 16px, 1.25);
 	padding: 15px 23px;
 	min-width: 161px;
 	border-radius: 25px;

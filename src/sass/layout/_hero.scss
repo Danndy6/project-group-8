@@ -1,260 +1,253 @@
 .hero {
-  background-color: $background-pink;
+	background-color: $background-pink;
 }
 .hero__container {
-  position: relative;
-  z-index: 1;
-  padding-top: 137px;
-  padding-bottom: 160px;
-  @media screen and (max-width: $tablet - 1) {
-    overflow: hidden;
-  }
-  @media screen and (min-width: $tablet) {
-    padding-top: 15px;
-    padding-bottom: 28px;
-  }
-  @media screen and (min-width: $desktop) {
-    padding-top: 84px;
-    padding-left: 115px;
-    height: 578px;
-  }
+	position: relative;
+	z-index: 1;
+	padding-top: 137px;
+	padding-bottom: 160px;
+	@media screen and (max-width: $tablet - 1) {
+		overflow: hidden;
+	}
+	@media screen and (min-width: $tablet) {
+		padding-top: 15px;
+		padding-bottom: 28px;
+	}
+	@media screen and (min-width: $desktop) {
+		padding-top: 84px;
+		padding-left: 115px;
+		height: 578px;
+	}
 }
 .hero__title {
-  font-family: Titan One;
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $main-white;
-  @media screen and (min-width: $tablet) {
-    font-size: 22px;
-    letter-spacing: 0.04em;
-  }
-  @media screen and (min-width: $desktop) {
-    font-size: 38px;
-    letter-spacing: 0.04em;
-  }
+	font-family: "Titan One", cursive;
+	@include font(400, 26px, 1.15);
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: $main-white;
+	@media screen and (min-width: $tablet) {
+		font-size: 22px;
+		letter-spacing: 0.04em;
+	}
+	@media screen and (min-width: $desktop) {
+		font-size: 38px;
+		letter-spacing: 0.04em;
+	}
 }
 .hero__title--alt {
-  font-size: 48px;
-  line-height: 0.96;
-  letter-spacing: 0.04em;
-  color: $brand-color;
-  @media screen and (min-width: $tablet) {
-    font-size: 34px;
-    line-height: 0.91;
-    letter-spacing: 0.04em;
-  }
-  @media screen and (min-width: $desktop) {
-    font-size: 58px;
-    letter-spacing: 0.04em;
-  }
+	@include font(400, 48px, 0.96);
+	letter-spacing: 0.04em;
+	color: $brand-color;
+	@media screen and (min-width: $tablet) {
+		@include font(400, 34px, 0.91);
+		letter-spacing: 0.04em;
+	}
+	@media screen and (min-width: $desktop) {
+		@include font(400, 58px, 0.91);
+		letter-spacing: 0.04em;
+	}
 }
 .hero-nav {
-  display: flex;
-  margin-top: 20px;
-  @media screen and (min-width: $desktop) {
-    padding-top: 25px;
-  }
+	display: flex;
+	margin-top: 20px;
+	@media screen and (min-width: $desktop) {
+		padding-top: 25px;
+	}
 }
 .hero-nav__item:not(:last-child) {
-  margin-right: 8px;
-  @media screen and (min-width: $desktop) {
-    margin-right: 15px;
-  }
+	margin-right: 8px;
+	@media screen and (min-width: $desktop) {
+		margin-right: 15px;
+	}
 }
 .hero__bg--circle {
-  position: absolute;
-  z-index: -1;
-  bottom: 75px;
-  left: 36px;
+	position: absolute;
+	z-index: -1;
+	bottom: 75px;
+	left: 36px;
 
-  width: 346px;
-  height: 344px;
-  @media screen and (min-width: $tablet) {
-    bottom: 46px;
-    left: 307px;
+	width: 346px;
+	height: 344px;
+	@media screen and (min-width: $tablet) {
+		bottom: 46px;
+		left: 307px;
 
-    width: 324px;
-    height: 322px;
-  }
-  @media screen and (min-width: $desktop) {
-    bottom: 75px;
-    left: 475px;
+		width: 324px;
+		height: 322px;
+	}
+	@media screen and (min-width: $desktop) {
+		bottom: 75px;
+		left: 475px;
 
-    width: 538px;
-    height: 538px;
-  }
+		width: 538px;
+		height: 538px;
+	}
 }
 .hero__bg--icecream {
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  left: 117px;
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+	left: 117px;
 
-  width: 171px;
-  height: 410px;
-  @media screen and (min-width: $tablet) {
-    bottom: 0;
-    left: 378px;
+	width: 171px;
+	height: 410px;
+	@media screen and (min-width: $tablet) {
+		bottom: 0;
+		left: 378px;
 
-    width: 143px;
-    height: 336px;
-    @media screen and (min-width: $desktop) {
-      bottom: 0;
-      left: 594px;
+		width: 143px;
+		height: 336px;
+		@media screen and (min-width: $desktop) {
+			bottom: 0;
+			left: 594px;
 
-      width: 236px;
-      height: 557px;
-    }
-  }
+			width: 236px;
+			height: 557px;
+		}
+	}
 }
 .hero__bg--chica {
-  @media screen and (max-width: $tablet - 1) {
-    display: none;
-  }
-  position: absolute;
-  right: 34px;
-  bottom: 0;
+	@media screen and (max-width: $tablet - 1) {
+		display: none;
+	}
+	position: absolute;
+	right: 34px;
+	bottom: 0;
 
-  width: 168px;
-  height: 133px;
-  @media screen and (min-width: $desktop) {
-    position: absolute;
-    right: 109px;
+	width: 168px;
+	height: 133px;
+	@media screen and (min-width: $desktop) {
+		position: absolute;
+		right: 109px;
 
-    width: 293px;
-    height: 232px;
-  }
+		width: 293px;
+		height: 232px;
+	}
 }
 .hero-slider {
-  display: none;
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    margin-top: 19px;
-  }
-  @media screen and (min-width: $desktop) {
-    position: absolute;
-    bottom: 45px;
-    left: 77px;
-  }
+	display: none;
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		margin-top: 19px;
+	}
+	@media screen and (min-width: $desktop) {
+		position: absolute;
+		bottom: 45px;
+		left: 77px;
+	}
 }
 .hero-slider__tumb {
-  width: 124px;
-  height: 126px;
-  @media screen and (min-width: $desktop) {
-    width: 188px;
-    height: 191px;
-  }
+	width: 124px;
+	height: 126px;
+	@media screen and (min-width: $desktop) {
+		width: 188px;
+		height: 191px;
+	}
 }
 .hero-slider__wrapper {
-  display: flex;
-  flex-direction: column;
-  padding-top: 47px;
-  max-width: 114px;
-  @media screen and (min-width: $desktop) {
-    max-width: 200px;
-    padding-top: 56px;
-    margin-left: 30px;
-  }
+	display: flex;
+	flex-direction: column;
+	padding-top: 47px;
+	max-width: 114px;
+	@media screen and (min-width: $desktop) {
+		max-width: 200px;
+		padding-top: 56px;
+		margin-left: 30px;
+	}
 }
 .hero-slider__text {
-  font-size: 8px;
-  line-height: 1.5;
-  color: $main-white;
-  @media screen and (min-width: $desktop) {
-    font-size: 14px;
-    line-height: 1.4;
-  }
+	font-size: 8px;
+	line-height: 1.5;
+	color: $main-white;
+	@media screen and (min-width: $desktop) {
+		font-size: 14px;
+		line-height: 1.4;
+	}
 }
 .hero-slider__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 7px;
-  padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 7px;
+	padding: 0;
 
-  width: 18px;
-  height: 18px;
-  border: 0;
-  border-radius: 50%;
-  @media screen and (min-width: $desktop) {
-    margin-top: 20px;
+	width: 18px;
+	height: 18px;
+	border: 0;
+	border-radius: 50%;
+	@media screen and (min-width: $desktop) {
+		margin-top: 20px;
 
-    width: 26px;
-    height: 26px;
-  }
+		width: 26px;
+		height: 26px;
+	}
 }
 .hero-slider__icon {
-  width: 6px;
-  height: 6px;
-  fill: currentColor;
-  @media screen and (min-width: $desktop) {
-    width: 8px;
-    height: 8px;
-  }
+	width: 6px;
+	height: 6px;
+	fill: currentColor;
+	@media screen and (min-width: $desktop) {
+		width: 8px;
+		height: 8px;
+	}
 }
 .units-count {
-  @media screen and (max-width: $tablet - 1) {
-    display: none;
-  }
-  position: absolute;
-  right: 42px;
-  bottom: 205px;
-  @media screen and (min-width: $desktop) {
-    right: 115px;
-    bottom: 341px;
-  }
+	@media screen and (max-width: $tablet - 1) {
+		display: none;
+	}
+	position: absolute;
+	right: 42px;
+	bottom: 205px;
+	@media screen and (min-width: $desktop) {
+		right: 115px;
+		bottom: 341px;
+	}
 }
 .units-count__item {
-  position: relative;
-  &:not(:first-child) {
-    margin-top: 14px;
-    @media screen and (min-width: $desktop) {
-      margin-top: 18px;
-    }
-  }
-  &::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: -3px;
-    right: -8px;
+	position: relative;
+	&:not(:first-child) {
+		margin-top: 14px;
+		@media screen and (min-width: $desktop) {
+			margin-top: 18px;
+		}
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: -3px;
+		right: -8px;
 
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: $main-white;
-    @media screen and (min-width: $desktop) {
-      top: -6px;
-      right: -16px;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background-color: $main-white;
+		@media screen and (min-width: $desktop) {
+			top: -6px;
+			right: -16px;
 
-      width: 30px;
-      height: 30px;
-    }
-  }
+			width: 30px;
+			height: 30px;
+		}
+	}
 }
 .units-count__text {
-  font-family: Titan One;
-  font-size: 28px;
-  line-height: 1.14;
-  text-align: right;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $brand-color;
-  @media screen and (min-width: $desktop) {
-    font-size: 46px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-  }
+	font-family: "Titan One", cursive;
+	@include font(400, 28px, 1.14);
+	text-align: right;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: $brand-color;
+	@media screen and (min-width: $desktop) {
+		@include font(400, 46px, 1.15);
+		letter-spacing: 0.04em;
+	}
 }
 .units-count__text--label {
-  font-size: 8px;
-  line-height: 1.25;
-  text-align: right;
-  color: $main-white;
-  @media screen and (min-width: $desktop) {
-    font-size: 14px;
-    line-height: 1.29;
-  }
+	@include font(400, 8px, 1.25);
+	text-align: right;
+	color: $main-white;
+	@media screen and (min-width: $desktop) {
+		@include font(400, 14px, 1.29);
+	}
 }
