@@ -31,7 +31,15 @@
 	height: 250px;
 	overflow: hidden;
 	margin-bottom: 30px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 60px;
+    }
 }
+
 .products__title {
 	font-family: "Titan One", cursive;
 	@include font(400, 20px, 1.15);
@@ -53,7 +61,6 @@
 }
 
 .products__text {
-	margin-bottom: 30px;
 	@include font(700, 14px, 1.52);
 	letter-spacing: 0.04em;
 	text-align: center;
@@ -68,15 +75,10 @@
 	}
 	@media screen and (min-width: $tablet) {
 		line-height: 1.76;
-		margin-bottom: 40px;
 	}
 	@media screen and (min-width: $desktop) {
 		font-size: 16px;
-		margin-bottom: 60px;
 	}
-}
-#more {
-	display: none;
 }
 .products__item {
 	position: relative;
